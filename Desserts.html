@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Italian Starters Menu</title>
+    <style>
+      body {
+        background-color: rgb(19, 24, 28);
+      }
+      .list-group-item {
+        background-color: rgb(19, 24, 28);
+
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        border: none;
+      }
+      .list-group {
+        border: none;
+      }
+      .item-price {
+        float: right;
+        font-weight: bold;
+        margin-top: -11px;
+        background-color: rgb(19, 24, 28);
+        padding: 0 5px;
+        position: absolute;
+        right: 0;
+        color: #daa158;
+        border: none;
+      }
+      .titlemenu,
+      h4,
+      p {
+        color: whitesmoke;
+        opacity: 0.8;
+      }
+      p {
+        border-bottom: 3px solid #daa158;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      .titlemenu {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container-fluid px-4">
+        <a
+          href="#"
+          class="navbar-brand"
+          style="font-family: Tangerine; color: #daa158"
+          >Quattro for Magic</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navmenu"
+          style="background-color: whitesmoke; opacity: 0.5; font-size: 10px"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" style="color: #daa158"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link" style="color: #daa158"
+                >Menu</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="Gallery.html" class="nav-link" style="color: #daa158"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Location.html" class="nav-link" style="color: #daa158"
+                >Our Locations</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Book.html" class="nav-link" style="color: #daa158"
+                >Book</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid px-4">
+      <h2 class="titlemenu">Menu - Desserts</h2>
+      <div class="row" style="padding-bottom: 100px">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item menu-item">
+              <h4>Tiramisu</h4>
+              <p>
+                A classic Italian dessert made with layers of coffee-soaked
+                ladyfingers, mascarpone cheese, and cocoa powder.
+              </p>
+              <span class="item-price px-4">€6.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Cannoli</h4>
+              <p>
+                Crispy pastry tubes filled with sweet ricotta cheese, chocolate
+                chips, and candied fruit.
+              </p>
+              <span class="item-price px-4">€5.49</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Panna Cotta</h4>
+              <p>
+                Creamy vanilla-flavored custard topped with a fruit compote or
+                caramel sauce.
+              </p>
+              <span class="item-price px-4">€7.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Gelato</h4>
+              <p>
+                Italian-style ice cream available in various flavors, including
+                classics like chocolate, strawberry, and pistachio.
+              </p>
+              <span class="item-price px-4">€3.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Zeppole</h4>
+              <p>
+                Deep-fried doughnut-like pastries dusted with powdered sugar and
+                often served with a side of chocolate or raspberry sauce.
+              </p>
+              <span class="item-price px-4">€4.99</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item menu-item">
+              <h4>Cassata Siciliana</h4>
+              <p>
+                A traditional Sicilian cake made with sponge cake layers, sweet
+                ricotta cheese, candied fruit, and marzipan icing.
+              </p>
+              <span class="item-price px-4">€8.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Affogato</h4>
+              <p>
+                A simple dessert consisting of a scoop of vanilla gelato or ice
+                cream "drowned" in a shot of hot espresso.
+              </p>
+              <span class="item-price px-4">€5.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Sfogliatella</h4>
+              <p>
+                Flaky, layered pastries filled with sweet ricotta cheese and
+                citrus zest, often sprinkled with powdered sugar.
+              </p>
+              <span class="item-price px-4">€6.49</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Torta Caprese</h4>
+              <p>
+                A flourless chocolate and almond cake, typically served with a
+                dusting of cocoa powder or powdered sugar.
+              </p>
+              <span class="item-price px-4">€7.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Amaretto Cookies</h4>
+              <p>
+                Crunchy almond-flavored cookies made with amaretto liqueur,
+                perfect for dipping in coffee or enjoying on their own.
+              </p>
+              <span class="item-price px-4">€5.99</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+    </div>
+    <div
+      class="container-fluid text-center"
+      style="background-color: #daa158; padding-top: 20px"
+    >
+      <h2 style="font-size: 20px; color: black">Quattro for Magic</h2>
+      <h4 style="font-size: 20px; color: black">
+        Pizzeria, Eatery, Cafeteria, Cocktail Bar
+      </h4>
+      <h4 style="font-size: 20px; color: black">Rue du Italy 1</h4>
+      <h4 style="font-size: 20px; color: black">1000 Brusseles</h4>
+      <h4
+        style="font-size: 20px; color: black; padding-bottom: 20px; margin: 0"
+      >
+        +32 499 87 XX XX
+      </h4>
+    </div>
+  </body>
+</html>

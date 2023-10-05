@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Italian Starters Menu</title>
+    <style>
+      body {
+        background-color: rgb(19, 24, 28);
+      }
+      .list-group-item {
+        background-color: rgb(19, 24, 28);
+
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        border: none;
+      }
+      .list-group {
+        border: none;
+      }
+      .item-price {
+        float: right;
+        font-weight: bold;
+        margin-top: -11px;
+        background-color: rgb(19, 24, 28);
+        padding: 0 5px;
+        position: absolute;
+        right: 0;
+        color: #daa158;
+        border: none;
+      }
+      .titlemenu,
+      h4,
+      p {
+        color: whitesmoke;
+        opacity: 0.8;
+      }
+      p {
+        border-bottom: 3px solid #daa158;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      .titlemenu {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container-fluid px-4">
+        <a
+          href="#"
+          class="navbar-brand"
+          style="font-family: Tangerine; color: #daa158"
+          >Quattro for Magic</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navmenu"
+          style="background-color: whitesmoke; opacity: 0.5; font-size: 10px"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" style="color: #daa158"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link" style="color: #daa158"
+                >Menu</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="Gallery.html" class="nav-link" style="color: #daa158"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Location.html" class="nav-link" style="color: #daa158"
+                >Our Locations</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Book.html" class="nav-link" style="color: #daa158"
+                >Book</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid px-4">
+      <h2 class="titlemenu">Menu - Cooking</h2>
+      <div class="row" style="padding-bottom: 100px">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item menu-item">
+              <h4>Osso Buco</h4>
+              <p>
+                A classic Milanese specialty featuring tender veal shanks
+                slow-cooked with white wine, broth, and aromatic vegetables,
+                served with saffron risotto.
+              </p>
+              <span class="item-price px-4">€36.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Linguine alle Vongole</h4>
+              <p>
+                Al dente linguine pasta sautéed with fresh Manila clams, garlic,
+                white wine, and a hint of red pepper flakes, finished with a
+                sprinkle of parsley.
+              </p>
+              <span class="item-price px-4">€28.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Veal Saltimbocca</h4>
+              <p>
+                Thin slices of veal, topped with prosciutto and fresh sage
+                leaves, pan-seared to perfection, and served with a Marsala wine
+                reduction sauce.
+              </p>
+              <span class="item-price px-4">€32.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Ravioli ai Funghi Porcini</h4>
+              <p>
+                Homemade ravioli stuffed with a rich porcini mushroom and
+                ricotta filling, served in a creamy truffle-infused sauce.
+              </p>
+              <span class="item-price px-4">€30.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Orecchiette with Broccoli Rabe and Sausage</h4>
+              <p>
+                Ear-shaped orecchiette pasta tossed with sautéed broccoli rabe,
+                Italian sausage, garlic, and extra-virgin olive oil.
+              </p>
+              <span class="item-price px-4">€26.99</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item menu-item">
+              <h4>Tuscan Ribeye Steak</h4>
+              <p>
+                Ribeye steak seasoned with Tuscan herbs, grilled to perfection,
+                and served with a balsamic reduction, roasted potatoes, and
+                grilled asparagus.
+              </p>
+              <span class="item-price px-4">€38.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Lobster and Shrimp Risotto</h4>
+              <p>
+                Creamy Arborio rice cooked with lobster tail, shrimp, saffron,
+                and a seafood broth, garnished with fresh parsley and grated
+                Parmesan cheese.
+              </p>
+              <span class="item-price px-4">€42.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Gnocchi Gorgonzola</h4>
+              <p>
+                Soft potato gnocchi tossed in a creamy gorgonzola cheese sauce,
+                topped with toasted walnuts and a drizzle of honey.
+              </p>
+              <span class="item-price px-4">€24.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Branzino al Cartoccio</h4>
+              <p>
+                Whole Mediterranean sea bass baked in parchment paper with
+                lemon, capers, cherry tomatoes, and fresh herbs, served with
+                roasted fingerling potatoes.
+              </p>
+              <span class="item-price px-4">€34.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Risotto ai Frutti di Mare</h4>
+              <p>
+                Creamy risotto cooked with a variety of seafood, including
+                shrimp, mussels,in a fragrant saffron-infused broth.
+              </p>
+              <span class="item-price px-4">€15.99</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+    </div>
+    <div
+      class="container-fluid text-center"
+      style="background-color: #daa158; padding-top: 20px"
+    >
+      <h2 style="font-size: 20px; color: black">Quattro for Magic</h2>
+      <h4 style="font-size: 20px; color: black">
+        Pizzeria, Eatery, Cafeteria, Cocktail Bar
+      </h4>
+      <h4 style="font-size: 20px; color: black">Rue du Italy 1</h4>
+      <h4 style="font-size: 20px; color: black">1000 Brusseles</h4>
+      <h4
+        style="font-size: 20px; color: black; padding-bottom: 20px; margin: 0"
+      >
+        +32 499 87 XX XX
+      </h4>
+    </div>
+  </body>
+</html>

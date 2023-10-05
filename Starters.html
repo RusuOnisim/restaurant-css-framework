@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Italian Starters Menu</title>
+    <style>
+      body {
+        background-color: rgb(19, 24, 28);
+      }
+      .list-group-item{
+        background-color: rgb(19, 24, 28);
+      
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        border: none;
+      }
+      .list-group{
+        border: none;
+      }
+      .item-price {
+        float: right;
+        font-weight: bold;
+        margin-top: -11px;
+        background-color: rgb(19, 24, 28);
+        padding: 0 5px;
+        position: absolute;
+        right: 0;
+        color: #daa158;
+        border: none;
+      }
+      .titlemenu,
+      h4,
+      p {
+        color: whitesmoke;
+        opacity: 0.8;
+        
+      }
+      p{
+        border-bottom: 3px solid #daa158;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      .titlemenu {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container-fluid px-4">
+        <a
+          href="#"
+          class="navbar-brand"
+          style="font-family: Tangerine; color: #daa158"
+          >Quattro for Magic</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navmenu"
+          style="background-color: whitesmoke; opacity: 0.5; font-size: 10px"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" style="color: #daa158"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link" style="color: #daa158"
+                >Menu</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="Gallery.html" class="nav-link" style="color: #daa158"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Location.html" class="nav-link" style="color: #daa158"
+                >Our Locations</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Book.html" class="nav-link" style="color: #daa158"
+                >Book</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid px-4">
+      <h2 class="titlemenu">Menu - Starters</h2>
+      <div class="row" style="padding-bottom: 100px">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item menu-item">
+              <h4>Bruschetta al Pomodoro</h4>
+              <p>
+                Sliced toasted baguette topped with diced tomatoes, fresh basil,
+                garlic.
+              </p>
+              <span class="item-price px-4">€10.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Caprese Salad</h4>
+              <p>
+                A classic combination of fresh mozzarella cheese, ripe tomatoes,
+                basil leaves.
+              </p>
+              <span class="item-price px-4">€9.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Arancini</h4>
+              <p>
+                Deep-fried risotto balls stuffed with mozzarella cheese and
+                served with marinara sauce.
+              </p>
+              <span class="item-price px-4">€12.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Prosciutto e Melone</h4>
+              <p>
+                Thinly sliced prosciutto ham draped over sweet cantaloupe
+                slices, a perfect blend of salty and sweet.
+              </p>
+              <span class="item-price px-4">€9.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Gnocchi alla Sorrentina</h4>
+              <p>
+                Soft potato dumplings served in a rich tomato sauce, topped with
+                fresh mozzarella and baked until bubbly.
+              </p>
+              <span class="item-price px-4">€10.99</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item menu-item">
+              <h4>Calamari Fritti</h4>
+              <p>
+                Crispy fried calamari rings served with a zesty marinara sauce
+                and lemon wedges.
+              </p>
+              <span class="item-price px-4">€8.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Minestrone Soup</h4>
+              <p>
+                A hearty vegetable soup featuring seasonal vegetables, beans.
+              </p>
+              <span class="item-price px-4">€7.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Carpaccio di Manzo</h4>
+              <p>
+                Paper-thin slices of raw beef tenderloin drizzled with lemon,
+                olive oil, capers, and shaved Parmesan cheese.
+              </p>
+              <span class="item-price px-4">€9.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Polenta con Funghi</h4>
+              <p>
+                Creamy polenta topped with sautéed mushrooms, garlic, and fresh
+                herbs, finished with a drizzle of truffle oil.
+              </p>
+              <span class="item-price px-4">€16.99</span>
+            </li>
+            <li class="list-group-item menu-item">
+              <h4>Risotto ai Frutti di Mare</h4>
+              <p>
+                Creamy risotto cooked with a variety of seafood, including
+                shrimp, mussels,in a fragrant saffron-infused
+                broth.
+              </p>
+              <span class="item-price px-4">€15.99</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div></div>
+    <div
+    class="container-fluid text-center"
+    style="background-color: #daa158; padding-top: 20px"
+  >
+    <h2 style="font-size: 20px; color: black">Quattro for Magic</h2>
+    <h4 style="font-size: 20px; color: black">
+      Pizzeria, Eatery, Cafeteria, Cocktail Bar
+    </h4>
+    <h4 style="font-size: 20px; color: black">Rue du Italy 1</h4>
+    <h4 style="font-size: 20px; color: black">1000 Brusseles</h4>
+    <h4 style="font-size: 20px; color: black; padding-bottom: 20px; margin: 0">
+      +32 499 87 XX XX
+    </h4>
+  </div>
+  </body>
+</html>

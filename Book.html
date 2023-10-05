@@ -1,0 +1,148 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: rgb(19, 24, 28);
+        color: white;
+      }
+      .contact-form {
+        margin: 50px auto;
+        max-width: 600px;
+        padding: 20px;
+        background-color: #daa158;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <div class="container-fluid px-4">
+      <a
+        href="#"
+        class="navbar-brand"
+        style="font-family: Tangerine; color: #daa158"
+        >Quattro for Magic</a
+      >
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navmenu"
+        style="background-color: whitesmoke; opacity: 0.5; font-size: 10px"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" style="color: #daa158"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="Menu.html" class="nav-link" style="color: #daa158">Menu</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Gallery.html" class="nav-link" style="color: #daa158"
+              >Gallery</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="Location.html" class="nav-link" style="color: #daa158"
+              >Our Locations</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="Book.html" class="nav-link" style="color: #daa158">Book</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <div class="container-fluid">
+      <div class="row pb-5">
+        <div class="col-md-12">
+          <h2 style="text-align: center; padding-top: 150px">BOOK</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstname"
+                placeholder="Enter your first name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastname"
+                placeholder="Enter your last name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Table</label>
+              <select class="form-control" id="subject">
+                <option value="option1">Table for 2-4</option>
+                <option value="option2">Table for 4-8</option>
+                <option value="option3">Table for 8+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+      <div
+        class="container-fluid text-center"
+        style="background-color: #daa158"
+      >
+        <h2 style="font-size: 20px; color: black; padding-top: 40px">
+          Quattro for Magic
+        </h2>
+        <h4 style="font-size: 20px; color: black">
+          Pizzeria, Eatery, Cafeteria, Cocktail Bar
+        </h4>
+        <h4 style="font-size: 20px; color: black">Rue du Italy 1</h4>
+        <h4 style="font-size: 20px; color: black">1000 Brusseles</h4>
+        <h4
+          style="font-size: 20px; color: black; padding-bottom: 20px; margin: 0"
+        >
+          +32 499 87 XX XX
+        </h4>
+      </div>
+    
+  </body>
+</html>
