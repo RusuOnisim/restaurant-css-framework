@@ -2,11 +2,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="/sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
       body {
         background-color: rgb(19, 24, 28);
@@ -21,6 +30,7 @@
       }
     </style>
   </head>
+  <body>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light">
     <div class="container-fluid px-4">
       <a
@@ -68,7 +78,7 @@
       </div>
     </div>
   </nav>
-  <body>
+  
     <div class="container-fluid">
       <div class="row pb-5">
         <div class="col-md-12">
@@ -110,6 +120,14 @@
               </select>
             </div>
             <div class="form-group">
+              <label for="date">Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="date"
+              />
+            </div>
+            <div class="form-group">
               <label for="message">Message</label>
               <textarea
                 class="form-control"
@@ -125,24 +143,28 @@
         </div>
       </div>
     </div>
-      <div
-        class="container-fluid text-center"
-        style="background-color: #daa158"
-      >
-        <h2 style="font-size: 20px; color: black; padding-top: 40px">
-          Quattro for Magic
-        </h2>
-        <h4 style="font-size: 20px; color: black">
-          Pizzeria, Eatery, Cafeteria, Cocktail Bar
-        </h4>
-        <h4 style="font-size: 20px; color: black">Rue du Italy 1</h4>
-        <h4 style="font-size: 20px; color: black">1000 Brusseles</h4>
-        <h4
-          style="font-size: 20px; color: black; padding-bottom: 20px; margin: 0"
-        >
-          +32 499 87 XX XX
-        </h4>
+    <footer class="bg-dark pt-4">
+      <div class="container pt-3">
+        <div class="row justify-content-between">
+          <div class="col-12 col-md-5" style="color: #daa158">
+            <h2>Operating Hours</h2>
+            <ul class="p-3">
+              <li><strong>Monday to Thursday:</strong> 11:00 AM - 9:00 PM</li>
+              <li><strong>Friday and Saturday:</strong> 11:00 AM - 10:00 PM</li>
+              <li><strong>Sunday:</strong> 12:00 PM - 8:00 PM</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 pb-3" style="color: #daa158">
+            <h2 class="pb-3">Location</h2>
+            <ul class="pl-3">
+              <li><strong>Address:</strong> 1700 Dilbeek</li>
+              <li><strong>Phone:</strong> +32 499 87 XX XX</li>
+              <li><strong>Address:</strong> 1000 Bruxelles</li>
+              <li><strong>Phone:</strong> +32 499 55 XX XX</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    
+    </footer>
   </body>
 </html>
