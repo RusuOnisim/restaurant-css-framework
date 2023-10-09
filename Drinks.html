@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="/sass/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -61,10 +61,15 @@
         padding-bottom: 100px;
         text-align: center;
       }
+      .fa-solid:hover{
+      color:#daa158 !important;
+      transform: scale(1.6);
+      transition: transform 0.3s ease;
+     }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
       <div class="container-fluid px-4">
         <a
           href="#"
@@ -116,8 +121,15 @@
       </div>
     </nav>
     <div class="container-fluid px-4">
-      <h2 class="titlemenu">Menu - Drinks</h2>
-      <div class="row" style="padding-bottom: 100px">
+      <h2 class="titlemenu pb-3">Menu - Drinks
+        <div class="row pt-5" style="padding-bottom: 0;">
+        <div class="col-3"><a href="Starters.html"><i class="fa-solid fa-bowl-food" style="color:grey;"></i></a><p style="font-size: 14px; border-bottom: none;">Starters</p></div>
+        <div class="col-3"><a href="Cooking.html"> <i class="fa-solid fa-pizza-slice" style="color:grey;"></i></a><p style="font-size: 14px; border-bottom: none;">Cooking</p></div>
+        <div class="col-3"><a href="Desserts.html"> <i class="fa-solid fa-cake-candles"style="color: grey;"></i></a><p style="font-size: 14px; border-bottom: none;">Desserts</p> </div>
+        <div class="col-3"><a href="Drinks.html"><i class="fa-solid fa-martini-glass-citrus"style="color: #daa158;"></i> </a><p style="font-size: 14px; border-bottom: none;">Drinks</p></div>
+        </div>
+      </h2>
+        <div class="row" style="padding-bottom: 100px">
         <div class="col-md-6">
           <ul class="list-group">
             <li class="list-group-item menu-item">
@@ -162,14 +174,14 @@
             <li class="list-group-item menu-item">
               <h4>Negroni</h4>
               <p>
-                A classic Italian cocktail made with equal parts gin, Campari, and sweet vermouth, garnished with an orange twist and served over ice.
+                A classic cocktail made with equal parts gin, Campari, and sweet vermouth, garnished with an orange twist and served over ice.
               </p>
               <span class="item-price px-4">€9.99</span>
             </li>
             <li class="list-group-item menu-item">
               <h4>Aperol Spritz</h4>
               <p>
-                A refreshing and bittersweet Italian cocktail made with Aperol, prosecco, and a splash of soda water, garnished with an orange slice.
+                A refreshing and bittersweet Italian cocktail made with Aperol, prosecco, soda water, garnished with an orange slice.
               </p>
               <span class="item-price px-4">€7.99</span>
             </li>
@@ -190,7 +202,7 @@
             <li class="list-group-item menu-item">
               <h4>Amaretto Sour</h4>
               <p>
-                A sweet and sour cocktail made with Amaretto liqueur, fresh lemon juice, and a touch of simple syrup.
+                A sweet and sour cocktail made with Amaretto liqueur,lemon juice, and a touch of simple syrup.
               </p>
               <span class="item-price px-4">€10.99</span>
             </li>
