@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A page italian restaurant named Quattro for Magic from bruxelles and dilbeek">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,9 +55,28 @@
       letter-spacing: 5px;
       font-weight: bold;
     }
+    .cookie-notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#accept-cookie {
+  margin-left: 10px;
+}
   </style>
 
   <body>
+    <div id="cookie-notification" class="cookie-notification">
+      <p>This website uses cookies to ensure you get the best experience on our website.</p>
+      <button id="accept-cookie" class="btn btn-primary">Accept</button>
+    </div>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
       <div class="container-fluid">
         <a
@@ -177,5 +197,42 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cookieNotification = document.getElementById("cookie-notification");
+        const acceptCookieButton = document.getElementById("accept-cookie");
+    
+        // Check if the user has already accepted the cookie
+        if (!getCookie("cookieAccepted")) {
+          cookieNotification.style.display = "block";
+        }
+    
+        // Function to set a cookie
+        function setCookie(name, value, days) {
+          const expires = new Date();
+          expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+          document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+        }
+    
+        // Function to get a cookie
+        function getCookie(name) {
+          const cookieName = `${name}=`;
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+            let cookie = cookies[i].trim();
+            if (cookie.indexOf(cookieName) === 0) {
+              return cookie.substring(cookieName.length, cookie.length);
+            }
+          }
+          return null;
+        }
+    
+        // Event listener for accepting the cookie
+        acceptCookieButton.addEventListener("click", function () {
+          setCookie("cookieAccepted", "true", 365); // Set the cookie for 1 year
+          cookieNotification.style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>

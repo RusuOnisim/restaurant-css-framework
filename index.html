@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="A page italian restaurant named Quattro for Magic from bruxelles and dilbeek">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,10 +14,10 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Quatro for magic</title>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Quattro for magic</title>
   </head>
   <style>
     body{
@@ -95,8 +96,27 @@
 body{
   height: 100%;
 }
+.cookie-notification-popup {
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+        #accept-cookie {
+            margin-left: 10px;
+        }
   </style>
   <body>
+    <div id="cookie-notification" class="cookie-notification-popup">
+      <p>This website uses cookies to ensure you get the best experience on our website.</p>
+      <button id="accept-cookie" class="btn btn-dark" style="color: #daa158;">Accept</button>
+  </div>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
       <div class="container-fluid">
         <a
@@ -139,7 +159,7 @@ body{
             </li>
             <li class="nav-item">
               <a href="Location.html" class="nav-link" style="color: #daa158"
-                >About us</a
+                >Our Location</a
               >
             </li>
             <li class="nav-item">
@@ -283,5 +303,33 @@ body{
           </div>
         </div>
       </footer>
+      <script>
+        // JavaScript to show the cookie notification pop-up
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieNotification = document.getElementById("cookie-notification");
+            const acceptCookieButton = document.getElementById("accept-cookie");
+
+            // Check if the user has already accepted the cookie
+            if (!getCookie("cookieAccepted")) {
+                cookieNotification.style.display = "block";
+            }
+
+            // Function to set a cookie
+            function setCookie(name, value, days) {
+                // (Same as in previous code)
+            }
+
+            // Function to get a cookie
+            function getCookie(name) {
+                // (Same as in previous code)
+            }
+
+            // Event listener for accepting the cookie
+            acceptCookieButton.addEventListener("click", function () {
+                setCookie("cookieAccepted", "true", 365); // Set the cookie for 1 year
+                cookieNotification.style.display = "none";
+            });
+        });
+    </script>
   </body>
 </html>

@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A page italian restaurant named Quattro for Magic from bruxelles and dilbeek">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,10 +23,22 @@
     body {
       background-color: rgb(19, 24, 28);
     }
+    .card-body-hidden {
+      display: none;
+    }
+    .card{
+      box-shadow: 0 10px 10px black;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      
+      transform: translate(0, -10px);
+      box-shadow: 0 9px 12px rgb(71, 71, 71);
+    }
   </style>
 
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
       <div class="container-fluid">
         <a
           href="#"
@@ -76,22 +89,51 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid p-0 py-5">
-      <div class="container" style="padding-top: 50px">
-        <div class="row justify-content-around">
-          <div class="col-12 col-lg-4 col-md-6">
-            <img src="land1.jpg" class="card-img pb-3" alt="Image 1" />
-          </div>
-          <div class="col-12 col-lg-4 col-md-6">
-            <img src="land2.jpg" class="card-img pb-3" alt="Image 2" />
-          </div>
-          <div class="col-12 col-lg-4 col-md-6">
-            <img src="land3.jpg" class="card-img pb-3" alt="Image 3" />
+    <div class="container-fluid" style="padding-top: 60px;">
+      <h2 class="text-center pt-5" style="color: #daa158;">Starters</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-xl-4 pt-5">
+        <div class="card bg-dark">
+          <img src="gnnochi.jpg" class="card-img-top" alt="...">
+          <div class="card-body card-body-hidden" style="color: #daa158;">
+            <h5 class="card-title">Gnocchi alla Sorrentina</h5>
+            <p class="card-text">Indulge in the comforting embrace of Gnocchi alla Sorrentina. Soft potato dumplings are lovingly enveloped in a rich tomato sauce, their pillowy texture complemented by the creamy allure of fresh mozzarella. Baked to perfection, each bite is a comforting journey through the heart of Italy, where simplicity meets the divine. </p>
           </div>
         </div>
-        <nav aria-label="...">
-          <ul class="pagination pagination-sm justify-content-end">
-            <li class="page-item active" aria-current="page">
+      </div>
+      <div class="col-md-6 col-xl-4 pt-5">
+      <div class="card bg-dark">
+        <img src="Arncini.jpg" class="card-img-top" alt="...">
+        <div class="card-body card-body-hidden" style="color: #daa158;">
+          <h5 class="card-title">Arancini</h5>
+          <p class="card-text">Savor the allure of Sicily with our Arancini. These golden, crispy rice balls are a delightful blend of creamy risotto, mozzarella cheese, and a heartwarming hint of saffron. Each bite is a journey through the flavors of Italy, a perfect harmony of textures and tastes that will transport your taste buds to the Mediterranean coast.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-xl-4 pt-5">
+      <div class="card bg-dark">
+        <img src="Rissoto.jpg" class="card-img-top" alt="...">
+        <div class="card-body card-body-hidden" style="color: #daa158;">
+          <h5 class="card-title">Risotto ai Frutti di Mare</h5>
+          <p class="card-text">Delight in the ocean's finest with our Risotto ai Frutti di Mare. Creamy Arborio rice harmoniously combines with succulent shrimp, tender calamari, and briny mussels, all bathed in a rich, savory broth. A touch of aromatic herbs enhances this coastal Italian masterpiece, offering a taste of the Mediterranean's culinary treasures.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-xl-4 pt-5">
+      <div class="card bg-dark">
+        <img src="Bruschete.jpg" class="card-img-top" alt="...">
+        <div class="card-body card-body-hidden" style="color: #daa158;">
+          <h5 class="card-title">Bruschetta al Pomodoro</h5>
+          <p class="card-text">Savor the taste of Italy with our Bruschetta al Pomodoro. Delicate slices of toasted rustic bread, infused with the warmth of freshly rubbed garlic, provide the canvas for this Italian masterpiece. Topped with the ripest tomatoes, fragrant basil, and a drizzle of extra-virgin olive oil, each bite is a journey through the sun-soaked fields of Tuscany.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+        <nav aria-label="..." >
+          <ul class="pagination pagination-sm justify-content-center pt-5" style="padding-bottom: 100px;" >
+            <li class="page-item active" aria-current="page" >
               <span class="page-link bg-dark" style="color: #daa158;">1</span>
             </li>
             <li class="page-item ">
@@ -127,5 +169,19 @@
         </div>
       </div>
     </footer>
+    <script>
+      // JavaScript to toggle the card-body visibility on click
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".card");
+  
+        cards.forEach(function (card) {
+          card.addEventListener("click", function () {
+            const cardBody = card.querySelector(".card-body");
+            cardBody.classList.toggle("card-body-hidden");
+          });
+        });
+      });
+    </script>
   </body>
+
 </html>
